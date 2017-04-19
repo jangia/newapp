@@ -1,0 +1,17 @@
+<div *ngIf="selectedCar" class="row">
+  <div class="input-field col s6">
+  <input placeholder="" id="manufacture" type="text" [(ngModel)]="selectedCar.manufacture">
+  <label for="manufacture">Manufacture</label>
+</div>
+
+<div class="input-field col s6">
+  <input [(ngModel)]="selectedCar.model" placeholder="" id="model" type="text">
+  <label for="model">Model</label>
+</div>
+
+<div class="input-field col s6">
+  <input [(ngModel)]="selectedCar.owner" placeholder="" id="owner" type="text">
+  <label for="owner">Owner</label>
+</div>
+</div>
+

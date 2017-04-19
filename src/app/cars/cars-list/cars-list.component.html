@@ -1,0 +1,17 @@
+     <table class="highlight">
+        <thead>
+          <tr>
+              <th>Manufacture</th>
+              <th>Model</th>
+              <th>Owner</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let car of cars" (click)="selectedCarClick(car)">
+            <td>{{car.manufacture}}</td>
+            <td>{{car.model}}</td>
+            <td>{{car.owner}}</td>
+          </tr>
+        </tbody>
+      </table>
